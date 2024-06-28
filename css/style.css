@@ -167,7 +167,7 @@ nav .b-line {
   transition: 0.5s;
 }
 nav .bl1 {
-  transform-origin: right;
+  top: 0;
 }
 nav .bl2 {
   left: 5px;
@@ -175,7 +175,6 @@ nav .bl2 {
   transform: translate(0, -50%);
 }
 nav .bl3 {
-  transform-origin: right;
   bottom: 0;
 }
 @media (width <= 650px) {
@@ -205,25 +204,15 @@ nav .active-burger .b-line {
   box-shadow: 0 0 1px 0px #1B1B1D;
 }
 nav .active-burger .bl1 {
-  transform: rotate(-45deg);
-  left: -30%;
-}
-@media (width <= 360px) {
-  nav .active-burger .bl1 {
-    left: -21%;
-  }
+  transform: rotate(-45deg) translate(0, -50%);
+  top: 50%;
 }
 nav .active-burger .bl2 {
   left: 100%;
 }
 nav .active-burger .bl3 {
-  transform: rotate(45deg);
-  left: -30%;
-}
-@media (width <= 360px) {
-  nav .active-burger .bl3 {
-    left: -21%;
-  }
+  transform: rotate(45deg) translate(0, 50%);
+  bottom: 50%;
 }
 nav .open-navbar {
   padding-top: 10px;
